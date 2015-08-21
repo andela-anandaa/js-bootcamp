@@ -36,7 +36,20 @@ For example, given array A such that:
 the function should return 4, as it is the missing element.
 
 **3. Number to Words**
+
 `num_to_word(438483478)` should output `four three eight four eight three four seven eight`
 
 **4. Factorial**
+
 Write a function `factorial(n)` that returns a factorial of a number.
+
+**5. Sum of Digits**
+
+Write a function `sum_of_digits(A)`, that takes in an array of numbers `A`, and returns the
+sum of all the digits in the numbers. e.g. `[10, 20, 3, 5, 6, 23]` should return
+`1 + 0 + 2 + 0 + 3 + 5 + 6 + 2 + 3 = 22`.
+
+**6. Sum of Unique Digits**
+
+Write a function `sum_of_unique_digits(A)`, that takes in an array of numbers `A`, and returns the sum of all the *unique* digits in the numbers. e.g. `[10, 20, 3, 5, 6, 23]` should return
+`1 + 0 + 2 + 3 + 5 + 6 = 17`.
