@@ -1,4 +1,4 @@
-var num_to_word = function (num) {
+/*var num_to_word = function (num) {
    num = num.toString();
    var length = num.length;
    var ans ='';
@@ -35,3 +35,25 @@ function nums(a) {
 
 //function calling
 console.log(num_to_word(123));
+*/
+
+
+function num_to_words(num) {
+   var wordEq = {
+      '0': 'zero',
+      '1': 'one',
+      '2': 'two',
+      '3': 'three',
+      '4': 'four',
+      '5': 'five',
+      '6': 'six',
+      '7': 'seven',
+      '8': 'eight',
+      '9': 'nine'
+   }
+   return num.toString().split('').map(n=>(wordEq[n])).join(' ')
+}
+
+console.log(num_to_words(744123));
+console.log(num_to_words(12309231));
+console.log(num_to_words(91238192));
