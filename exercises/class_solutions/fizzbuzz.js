@@ -1,14 +1,17 @@
 function fizzBuzz(n) {
+  /*
+  * @desc:
+  *   Another simpler implementation using a logical OR for the common FizzBuzz algorithm problem
+  * */   
   for (var i = 0; i <= n; i += 1) {
-    if (i % 15 === 0) {
-      console.log(i + ": FizzBuzz");
+    var output = "";
+    if (i % 3 === 0) {
+      console.log(output += "Fizz");
     }
-    else if (i % 5 === 0) {
-      console.log(i + ": Buzz");
+    if (i % 5 === 0) {
+      console.log(output += "Buzz");
     }
-    else if (i % 3 === 0) {
-      console.log(i + ": Fizz");
-    }
+    console.log(output || i)
   }
 }
 
